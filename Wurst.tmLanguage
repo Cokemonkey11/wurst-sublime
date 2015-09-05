@@ -10,7 +10,7 @@
 	</array>
 
 	<key>foldingStartMarker</key>
-	<string>^\s*(function|class|scope|library|package|method|)\s+([.a-zA-Z0-9_ &lt;]+)\s*(\((.*)\))?\s*:|\{\s*$|\(\s*$|\[\s*$|^\s*"""(?=.)(?!.*""")</string>
+	<string>^\s*(function|class|scope|library|package|method|struct)\s+([.a-zA-Z0-9_ &lt;]+)\s*(\((.*)\))?\s*:|\{\s*$|\(\s*$|\[\s*$|^\s*"""(?=.)(?!.*""")</string>
 
 	<key>foldingStopMarker</key>
 	<string>^\s*$|^\s*\}|^\s*\]|^\s*\)|^\s*"""\s*$</string>
@@ -161,7 +161,7 @@
 		<!-- Class -->
 		<dict>
 			<key>begin</key>
-			<string>^\s*(class)\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\s*\:)</string>
+			<string>^\s*(class|struct)\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\s*\:)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -196,7 +196,7 @@
 		<!-- Class -->
 		<dict>
 			<key>begin</key>
-			<string>^\s*(class)\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\s*\()</string>
+			<string>^\s*(class|struct)\s+(?=[a-zA-Z_][a-zA-Z_0-9]*\s*\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -761,7 +761,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(class)\b</string>
+			<string>\b(class|struct)\b</string>
 		</dict>
 
 		<!-- Include Line Continuations -->
@@ -1197,7 +1197,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while)\b</string>
+			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while|struct)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.wurst</string>
 		</dict>
