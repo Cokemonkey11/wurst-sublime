@@ -926,7 +926,7 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)\b(
-				constant|scope|initializer|takes|nothing|returns|end|endscope|static|public|module|enum|private|new|package
+				constant|scope|initializer|takes|nothing|returns|end|endscope|static|public|module|enum|private|new|package|library|endlibrary
 			)\b</string>
 			<key>name</key>
 			<string>support.type.modifier.wurst</string>
