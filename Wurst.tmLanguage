@@ -10,7 +10,7 @@
 	</array>
 
 	<key>foldingStartMarker</key>
-	<string>^\s*(function|class|scope|library|package|)\s+([.a-zA-Z0-9_ &lt;]+)\s*(\((.*)\))?\s*:|\{\s*$|\(\s*$|\[\s*$|^\s*"""(?=.)(?!.*""")</string>
+	<string>^\s*(function|class|scope|library|package|method|)\s+([.a-zA-Z0-9_ &lt;]+)\s*(\((.*)\))?\s*:|\{\s*$|\(\s*$|\[\s*$|^\s*"""(?=.)(?!.*""")</string>
 
 	<key>foldingStopMarker</key>
 	<string>^\s*$|^\s*\}|^\s*\]|^\s*\)|^\s*"""\s*$</string>
@@ -342,7 +342,7 @@
 		<!-- function hello takes unit u returns nothing -->
 		<dict>
 			<key>begin</key>
-			<string>^\s*(function)\s+(?=[A-Za-z_][A-Za-z0-9_]*\s*(\(|takes))</string>
+			<string>^\s*(function|method)\s+(?=[A-Za-z_][A-Za-z0-9_]*\s*(\(|takes))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -747,7 +747,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(function)\b</string>
+			<string>\b(function|method)\b</string>
 		</dict>
 
 		<!-- Class -->
@@ -1197,7 +1197,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(and|as|assert|break|class|continue|function|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|return|try|while|with|yield)\b</string>
+			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.wurst</string>
 		</dict>
