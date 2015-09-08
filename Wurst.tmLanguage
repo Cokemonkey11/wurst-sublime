@@ -926,7 +926,7 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)\b(
-				constant|scope|initializer|takes|nothing|returns|end|endscope|static|public|module|enum|private|new|package|library|endlibrary
+				constant|scope|initializer|takes|nothing|returns|end|endscope|static|public|module|enum|private|new|package|library|endlibrary|native
 			)\b</string>
 			<key>name</key>
 			<string>support.type.modifier.wurst</string>
@@ -1197,7 +1197,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while|struct)\b</string>
+			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while|struct|native)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.wurst</string>
 		</dict>
