@@ -1239,9 +1239,9 @@
 		<key>language_variables</key>
 		<dict>
 			<key>match</key>
-			<string>\b(this|thistype|compiletime)\b</string>
+			<string>\b(this|thistype|compiletime|true|false|null|array)\b</string>
 			<key>name</key>
-			<string>variable.language.wurst</string>
+			<string>support.constant.wurst</string>
 		</dict>
 		<key>line_continuation</key>
 		<dict>
