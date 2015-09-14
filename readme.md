@@ -26,8 +26,23 @@ Contributing
 I will accept well-formed commits that:
 
 * Don't regress the current highlighter
-* Have good meta-data
+* Have good meta-data:
+    - Use [Imperative Mood](http://chris.beams.io/posts/git-commit/#imperative)
+    in commit messages
+    - Large commits should have verbose commit messages
 * Don't cause conflicts
+* Follow coding standards:
+    - JSON and JSON-like:
+        * Spaced comment-style like `// hello world`
+    - Markdown:
+        * 79-character limit except in unusual circumstances
+    - Python:
+        * Full PEP8 validity
+        * Big lists of data should be extracted and included
+        * Variables and methods with `underscore_style`
+        * Descriptive, rather than terse, method and variable names
+        * No code commented out
+        * Logical blocks of code need good comments
 
 I welcome issues in the issue tracker, but make no guarantees whatsoever about
 my response to them.
