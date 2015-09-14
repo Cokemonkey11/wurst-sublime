@@ -5,7 +5,11 @@ This package is the barebones syntax highlighter for wurst in sublime-text. It
 is a stripped-down copy of the Sublime Text 2 Python syntax highlighter.
 
 * Support is basic for both Wurst and Jurst.
-* Has been tested with Sublime Text 2 in Windows 7 x64
+* Tested environments:
+    - Sublime Text 2:
+        - Windows 7 x64
+    - Sublime Text 3:
+        - Windows 7 x64
 
 Installation
 ------------
@@ -13,8 +17,9 @@ Installation
 * Zip up `Completion Rules.tmPreferences` and `Wurst.tmLanguage` into a zip
 file.
 * Rename the zip file `Wurst.sublime-package`
-* Copy the package into `C:\Program Files\Sublime Text 2\Pristine Packages` or
-equivalent
+* Copy the package into the sublime package directory:
+    - ST2: `C:\Program Files\Sublime Text 2\Pristine Packages`
+    - ST3: `C:\Program Files\Sublime Text 3\Packages`
 * Restart Sublime Text.
 
 `*.wurst` and `*.jurst` should syntax-highlight automatically. If not, select
