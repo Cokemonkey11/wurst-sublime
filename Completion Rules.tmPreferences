@@ -8,7 +8,7 @@
     <key>settings</key>
     <dict>
         <key>cancelCompletion</key>
-        <string>^(.*\b(and|or)$)|(\s*(return|and|or|(class|function|import|method|struct)\s*[a-zA-Z_0-9]+)$)</string>
+        <string>^(.*\b(and|or)$)|(\s*(return|and|or|(class|function|import|method|struct|end|loop|new|castTo|destroy|var|let)\s*[a-zA-Z_0-9]+)$)</string>
     </dict>
 </dict>
 </plist>
