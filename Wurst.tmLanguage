@@ -111,7 +111,7 @@
 			<key>comment</key>
 			<string>keywords that delimit flow blocks or alter flow from within a block</string>
 			<key>match</key>
-			<string>\b(else|for|if|while|break|return|in|skip|case|default|then|exitwhen|elseif|endif|then)\b</string>
+			<string>\b(else|for|if|while|break|return|in|skip|case|default|then|exitwhen|elseif|endif|then|loop)\b</string>
 			<key>name</key>
 			<string>keyword.control.flow.wurst</string>
 		</dict>
@@ -926,7 +926,7 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)\b(
-				constant|scope|initializer|takes|nothing|returns|end|endscope|static|public|module|enum|private|new|package|library|endlibrary|native
+				constant|scope|initializer|takes|nothing|returns|end|endscope|static|public|module|enum|private|new|package|library|endlibrary|native|let|var|castTo|destroy
 			)\b</string>
 			<key>name</key>
 			<string>support.type.modifier.wurst</string>
@@ -1197,7 +1197,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while|struct|native)\b</string>
+			<string>\b(and|break|class|function|method|else|elseif|for|from|global|if|import|in|not|or|skip|return|while|struct|native|loop)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.wurst</string>
 		</dict>
